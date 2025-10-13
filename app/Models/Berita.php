@@ -9,40 +9,41 @@ class Berita extends Model
 {
    private static $data_berita = [
         [
-            "judul" => "Unimus Ganteng",
-            "slug" => "unimus-ganteng",
-            "penulis" => "anjo",
-            "konten" => "pembunuhan tanpa busana daerah ciliwangi",
+            "judul" => "Musang UNIMUS",
+            "slug" => "unimus-Musang",
+            "penulis" => "Kumpulan Musang aseli UNIMUS",
+            "konten" => "ga dijual tapi klo 100k+ kandang auto lepas",
         ],
         [
-            "judul" => "Berita Unimus Hot",
-            "slug"=> "berita-unimus-hot",
-            "penulis" => "jamno",
-            "konten" => "menangis meratapi nasib, seorang pemuda ditemukan sedang melahirkan disekitar lampu merah ciliwung",
+            "judul" => "UNIMUS Gacor",
+            "slug"=> "keGacoran UNIMUS",
+            "penulis" => "Bukti keGacoran UNIMUS",
+            "konten" => "Gaboleh Sombong Kalo gajago",
         ],
         [
-            "judul" => "Fatur Full Percakapan",
-            "slug" => "fatur-full-percakapan",
-            "penulis" => "pukime",
-            "konten" => "munaroh menikami",
+            "judul" => "Koleksi Ambatunner",
+            "slug" => "Seluruh Koleksi Ambatunner",
+            "penulis" => "Ambatunner Speed Garage",
+            "konten" => "Kumpulan Pict yang Menarik dan Menggoda garapan Ambatunner",
         ],
     ];
 
-    public static function caridata($slug)
+    public static function ambildata()
+    {
+        return self::$data_berita;
+    }
 
-    public static function caridata($slug)
+    public static function caridata($slugp)
     {
         $data_beritas = self::$data_berita;
 
-         $new_berita = [];
-    
-    foreach ($data_berita as $berita)
- {
-
+         $new_berita = [];    
+    foreach ($data_beritas as $berita)
+    {
         if($berita["slug"] === $slugp)
-             {
+        {            
             $new_berita = $berita; ///$berita =>[judul, slug, penulis, konten]
-            }
+        }
     }
     return $new_berita;
     }

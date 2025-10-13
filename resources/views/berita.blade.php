@@ -9,6 +9,6 @@
             </a>
             <h3>{{ $berita['penulis']}}</h3>
             <p>{{$berita['konten']}}</p>
-</article>
-@endforeach
+        </article>
+        @endforeach
 @endsection

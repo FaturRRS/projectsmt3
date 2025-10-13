@@ -19,16 +19,16 @@
        
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link {{$title === 'Home' ? 'active' : '' }} " href="/home">Home</a>
+                        <a class="nav-link {{$title === 'Home' ? 'active' : '' }} " href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{$title === 'About' ? 'active' : '' }}" href="/about">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{$title === 'Profile' ? 'active' : '' }} " href="/profile">Profil</a>
+                        <a class="nav-link {{$title === 'Profile' ? 'active' : '' }} " href="/profil">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{$title === 'Contact' ? 'active' : '' }}" href="/contact">Kontak</a>
+                        <a class="nav-link {{$title === 'Contact' ? 'active' : '' }}" href="/kontak">Kontak</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{$title === 'Berita' ? 'active' : '' }} " href="/berita">Berita</a>
