@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\controllers\BeritaController;
 use App\Models\Berita;
 use Illuminate\Support\Facades\Route;
 
@@ -18,20 +19,10 @@ Route::get('/profil', function () {
     ]);
 });
 
-Route::get('/berita', function () {
-    return view('berita', [
-        "title" => "Berita",
-        "beritas" => Berita::ambildata(),
-    ]);
-});
+Route::get('/berita', [BeritaController::class,'index']);
 
-Route::get('/berita/{slug}', function ($slugp) {
-    return view('singleberita', [
-        "title" => "Berita",
-        "new_berita" => Berita::caridata($slugp),
-    ]);
-});
 
+Route::get('/berita/{slug}', [BeritaController::class,'tampildata']);
 Route::get('/kontak', function () {
     return view('kontak', [
         "title" => "kontak",

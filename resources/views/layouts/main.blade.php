@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         .hero-section {
-            background: linear-gradient(135deg, #0fc87eff 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ff0000ff 0%, #bcff02ff 100%);
             color: white;
             padding: 100px 0;
         }
