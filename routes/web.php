@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use App\Http\controllers\BeritaController;
 use App\Models\Berita;
